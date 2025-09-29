@@ -24,17 +24,41 @@ header nav a {
   color: #e0e0e0;
   text-decoration: none;
 }
+header h1 {
+  font-size: 50px;
+}
+header .buscador {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+header .buscador input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+header .buscador button {
+  padding: 8px 15px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+header .buscador button:hover {
+  background-color: rgb(255, 64.5189873418, 46);
+}
 
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
   padding: 20px;
 }
 
 .post-card {
   background-color: rgb(20.0649350649, 20.0649350649, 31.4350649351);
-  padding: 15px;
+  padding: 25px;
   border-radius: 10px;
   transition: transform 0.3s;
 }

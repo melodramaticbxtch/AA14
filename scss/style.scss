@@ -31,18 +31,48 @@ header {
     color: $color-secundario;
     text-decoration: none;
   }
+  h1 {
+    font-size: 50px;
+  }
+  
+  .buscador {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+
+  input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    padding: 8px 15px;
+    background-color: $color-acento;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($color-acento, 10%);
+    }
+  }
 }
+
+}
+
 
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
   padding: 20px;
 }
 
 .post-card {
   background-color: darken($color-principal, 5%);
-  padding: 15px;
+  padding: 25px;
   border-radius: 10px;
   transition: transform 0.3s;
 

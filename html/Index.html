@@ -5,39 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog Tecnológico</title>
   <link rel="stylesheet" href="../css/style.css">
-</head>
+</head>  
 <body>
   <header>
     <h1>Blog Tecnológico</h1>
+    <h3> Hola </h3>
     <nav>
       <ul>
-        <li><a href="#">Inicio</a></li>
+        <li><a href="../html/Index.html">Inicio</a></li>
         <li><a href="#">Posts</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
     </nav>
+    <div class="buscador">
+    <input type="text" id="inputBusqueda" placeholder="Buscar post...">
+    <button id="btnBusqueda">Buscar</button>
+  </div>
+
   </header>
 
   <main class="blog-grid">
     <article class="post-card">
-      <img src="img/post1.jpg" alt="Post 1">
-      <h2>Título del Post 1</h2>
+      <img src="../assets/post1.webp" alt="Post 1">
+      <h2>La IA en el mundo del trabajo: revolución tecnológica y desafíos humanos</h2>
       <p>Resumen breve del contenido del post...</p>
       <a href="#">Leer más</a>
     </article>
 
     <article class="post-card">
-      <img src="img/post2.jpg" alt="Post 2">
-      <h2>Título del Post 2</h2>
+      <img src="../assets/post2.jpg" alt="Post 2">
+      <h2>Nvidia, el gigante que alimenta la ola de la IA</h2>
+      <p>Resumen breve del contenido del post...</p>
+      <a href="#">Leer más</a>
+    </article>
+        <article class="post-card">
+      <img src="../assets/post3.jpeg" alt="Post 3">
+      <h2>Ryzen todo lo que debes saber</h2>
       <p>Resumen breve del contenido del post...</p>
       <a href="#">Leer más</a>
     </article>
 
-    <!-- Repetir más posts -->
+    <article class="post-card">
+      <img src="../assets/post4.jpg" alt="Post 4">
+      <h2>Intel vs Ryzen ¿Cual es mejor?</h2>
+      <p>Resumen breve del contenido del post...</p>
+      <a href="#">Leer más</a>
+    </article>
+
   </main>
 
   <footer>
     <p>&copy; 2025 Blog Tecnológico</p>
   </footer>
+<script src="../js/script.js"></script>
 </body>
 </html>
