@@ -65,7 +65,7 @@ header {
 
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding: 20px;
 }
@@ -93,6 +93,18 @@ header {
     color: $color-acento;
     text-decoration: none;
     font-weight: bold;
+  }
+}
+
+@include responsive(tablet) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@include responsive(mobile) {
+  .blog-grid {
+    grid-template-columns: 1fr; 
   }
 }
 
